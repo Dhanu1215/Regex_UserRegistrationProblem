@@ -43,4 +43,10 @@ public class TestUserRegistration {
         boolean check = UserRegistration.password2("Dhanuu@1");
         Assert.assertSame(true, check);
     }
+
+    @Test
+    public void checkValidPassword3() {
+        boolean check = UserRegistration.password3("Dhanuu@1");
+        Assert.assertSame(true, check);
+    }
 }

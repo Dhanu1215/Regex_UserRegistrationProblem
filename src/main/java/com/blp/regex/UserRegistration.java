@@ -35,8 +35,12 @@ public class UserRegistration {
         return check;
     }
 
-
     public static boolean password2(String pass) {
+        boolean check = Pattern.matches("^[A-Z]{1}[a-z]{5}@[0-9]{1}$", pass);
+        return check;
+    }
+
+    public static boolean password3(String pass) {
         boolean check = Pattern.matches("^[A-Z]{1}[a-z]{5}@[0-9]{1}$", pass);
         return check;
     }
