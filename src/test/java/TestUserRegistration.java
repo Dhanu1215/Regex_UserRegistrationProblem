@@ -20,4 +20,9 @@ public class TestUserRegistration {
         boolean check = UserRegistration.emailId("abc.xyz@bl.co.in");
         Assert.assertSame(true, check);
     }
+    @Test
+    public void checkValidMobNumber() {
+        boolean check = UserRegistration.mobileNumber("91 9765721521");
+        Assert.assertSame(true, check);
+    }
 }
