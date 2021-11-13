@@ -25,4 +25,8 @@ public class UserRegistration {
         return check;
     }
 
+    public static boolean password(String pass) {
+        boolean check = Pattern.matches("^[A-Za-z]{4}@[0-9]{3}$", pass);
+        return check;
+    }
 }
